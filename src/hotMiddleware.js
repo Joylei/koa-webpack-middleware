@@ -19,8 +19,9 @@ export default function middleware(compiler, options = {}) {
                 middleware(context.req, {
                     write: stream.write.bind(stream),
                     writeHead: (state, headers) =>{
-                        context.state = state
+                        context.status = state
                         context.set(headers)
+                        cb(null, true)
                     }
                 }, ()=>cb(null, false))
             } catch (error) {
