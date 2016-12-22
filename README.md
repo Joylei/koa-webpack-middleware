@@ -1,6 +1,16 @@
 # koa-webpack-middleware
 
-webpack dev/hot middleware for koa v1
+webpack dev/hot middleware for koa v1 and webpack v1
+
+## dependencies
+
+```sh
+webpack
+webpack-dev-middleware
+webpack-hot-middleware
+debug
+babel-polyfill
+```
 
 ## install
 
