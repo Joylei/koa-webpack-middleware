@@ -2,7 +2,7 @@
   "name": "koa-webpack-middleware",
   "version": "0.1.0",
   "description": "webpack dev/hot middleware for koa v1",
-  "main": "dist/main.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "babel src -d dist -s"
   },
