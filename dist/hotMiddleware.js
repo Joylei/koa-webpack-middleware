@@ -37,8 +37,9 @@ function middleware(compiler) {
                 middleware(context.req, {
                     write: stream.write.bind(stream),
                     writeHead: function writeHead(state, headers) {
-                        context.state = state;
+                        context.status = state;
                         context.set(headers);
+                        cb(null, true);
                     }
                 }, function () {
                     return cb(null, false);
